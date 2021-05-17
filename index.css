@@ -1,0 +1,250 @@
+@import 'css/header.css';
+@import 'css/footer.css';
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fdf9f2;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+header{
+    position: fixed;
+    z-index: 11;
+}
+.white{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 100px;
+ }
+
+ .container{
+     width: 96%;
+     height: auto;
+     margin: 0 auto;
+     max-width: 1500px;
+
+ }
+
+ .baslik-box{
+     width: 80%;
+     margin: 0 auto;
+ }
+
+ .baslik{
+     color: #464646;
+     margin-bottom: 20px;
+     font-size: 28px;
+     border-left: 3px solid #f6744f;
+     padding-left: 5px;
+ }  
+
+.trend-container{
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.178) ;
+    margin-bottom: 20px;
+
+}
+
+.container-f{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 25px;
+}
+
+.card{
+    width:230px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 5px -3px rgba(0, 0, 0, 0.050);
+    z-index: 4;
+}
+
+.card img{
+    width: 100%;
+    height: 150px;
+    border-radius:20px 20px 0 0;
+} 
+
+.card h2{
+margin:10px;
+}
+ 
+.card p{
+    margin: 10px;
+    font-size: 18px;
+}
+.card a{
+    background-color: #f67433;
+    color: white;
+    padding: 8px 22px;
+    display: block;
+    text-align: center;
+    margin: 30px 60px ;
+    border-radius: 15px;
+}
+
+.card:hover{
+background-color:rgb(62, 62, 62);
+color: white;
+cursor:pointer;
+transform: scale(1.03);
+transition: all 0.7s ease;
+z-index: 4;
+
+}
+
+.card a:hover{
+    background-color: orange;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+
+
+/*web-ayfalarin-numaralari*/
+
+.web-ayfalarin-numaralari{
+    margin: 30px 0px;
+    font-family: 'Montserrat', sans-serif;
+    width:100%;
+}
+
+.web-ayfalarin-numaralari ul{
+    width: 450px;
+    margin:  auto;
+}
+
+.web-ayfalarin-numaralari li{
+    background-color: rgba(0, 0, 0, 0.050);
+    width: 45px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    color: #464646;
+    margin: 2px;
+}
+
+.web-ayfalarin-numaralari a li{
+    line-height:30px ;
+    
+}
+
+ul .dots{
+    background-color: #fdf9f2;
+    width: 7px;
+}
+
+ul .place{
+    background-color: #f67433;
+    color: rgb(231, 228, 223);
+}
+
+.web-ayfalarin-numaralari li:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+ul .place:hover{
+    background-color: #f67433;
+    opacity: 0.8;
+}
+ul .dots:hover{
+background-color: #fdf9f2;
+}
+
+
+
+ /*media Queri*/
+
+ @media screen and (max-width: 610px){
+    .web-ayfalarin-numaralari ul{
+        width: 450px;
+    }
+ }
+
+@media screen and (max-width: 537px) {
+    .container{
+        width: 98%;
+    }
+
+    .card{
+        height: auto;
+    }
+    .card a{
+        width: 120px;
+        margin: auto;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 537px) and (min-width:450px) {
+    .card{
+        width: 57%;
+}
+.baslik{
+    font-size: 22px;
+}
+
+}
+
+
+@media screen and (max-width:473px){
+    .web-ayfalarin-numaralari ul{
+        width:100%;
+    }
+    .web-ayfalarin-numaralari li{
+        margin: 1px;
+        width: 32px;
+        border-radius: 10px;
+    }
+}
+
+
+@media screen and (max-width: 450px) and (min-width:400px){
+    .card{
+        width: 60%;
+    }
+
+    .baslik{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:400px) and (min-width:350px){
+    .card{
+        width: 70%;
+    }
+    .baslik{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:350px) {
+   .card{
+       width: 78%;
+   }
+   .baslik{
+    font-size: 17px;
+}
+
+.web-ayfalarin-numaralari li{
+    margin: 0px;
+    width: 30px;
+    border-radius: 30%;
+}
+
+}

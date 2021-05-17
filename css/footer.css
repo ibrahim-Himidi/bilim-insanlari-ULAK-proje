@@ -1,0 +1,40 @@
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    border-top: 2px solid #7b7b7b63;
+}
+
+
+
+.img-boxf{
+    background-image: url(../images/logo.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 62px;
+    margin:  0 auto;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #6dbbc7 ;
+}
+
+
+footer h5{
+  color: rgb(82, 82, 82);
+  width: 100%;
+  height: 12px;
+  text-align: center;
+  margin-top:30px;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+@media  screen and (max-width:470px){
+  .img-boxf{
+    width: 160px;
+    height: 50px;
+  }
+}

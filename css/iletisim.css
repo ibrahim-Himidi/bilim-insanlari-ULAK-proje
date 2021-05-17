@@ -1,0 +1,182 @@
+@import '../css/header.css';
+@import '../css/footer.css';
+body{
+background-color: #ffffff;
+width: 100%;
+height: auto;
+}    
+
+main{
+    width: 70%;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+main .iletisim-1 h1{
+    height: 75px;
+    text-align: center;
+    background-color:#efeee9;
+    color: #535050;
+    border-radius: 10px;
+    line-height: 75px;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+
+
+.iletisim-2{
+    background-color: #efeee9;
+    width: 100%;
+    height:auto;
+    border-radius:10px ;
+    padding-top: 30px;
+    position: relative;
+}
+
+.iletisim-3{
+    width: 50%;
+    height: 600px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+label{
+    font-size: 20px;
+    margin-left: 10px;
+} 
+
+span{
+    color: red;
+}
+
+
+input{
+    
+    border-radius:7px ;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-width: 1px;
+}
+
+
+
+textarea{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    min-width:100%;
+    max-width:180%;
+    max-height:270px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    margin-left:10px;
+    background-color: #7b7b7b;
+    border-radius: 6px;    
+    position: absolute;
+    bottom: 2%;
+}
+
+
+button :hover{
+    opacity: 0.6;
+}
+
+
+button h3{
+    color: white; 
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*media*/
+@media screen and (max-width:870px) {
+    main .iletisim-1 h1{
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .iletisim-2{
+        height:410px;
+    }
+
+    .iletisim-3{
+        width: 100%;
+    }
+
+    input{
+        width: 80%;
+        height: 25px;
+        font-size:16px;
+    }
+
+    label{
+        font-size: 17px;
+    } 
+
+    textarea{
+        width:80%;
+        height: 70px;
+        min-width: 80%;
+        max-width:80%;
+        max-height: 90px;
+        font-size: 16px;
+
+    }
+
+    main button{
+        width:150px;
+        height:30px;
+        bottom: 8%;
+    }
+
+    main .iletisim-2 button h3{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:580px) and (min-width:330px)
+{
+    input{
+        width:65%;
+    }
+
+
+    textarea{
+        width:70%;
+        height: 70px;
+        min-width: 70%;
+        max-width:70%;
+        max-height: 90px;
+    }
+
+    main button{
+        width: 90px;
+    }
+
+    main .iletisim-1 h1{
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+        
+}
